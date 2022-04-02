@@ -7,35 +7,75 @@
     </head>
     
     <body>
+        
         <div class="upper-links">
         <a href="index.html">Google Search</a>
         <a href="images.html">Images</a>
         </div>
 
-        <h3>Google</h3><br>
+        <img src="logoindex.png" alt="logoindex" style="width:80x;height:30px; padding-left: 10px;"><br/>
+        <br>
+        <br>
         <h4>Advanced Search</h4><br>
-        <h5>Find pages with...</h5><br>
-    <form action="https://www.google.com/search">
-        <div class="divs-advanced">
-            <label>all these words:</label>
-            <input type="text" size="70" class="box" name="as_q"><br><br>
-        </div>
-        <div class="divs-advanced">
+        <hr>
+
+        <table style="width:70%">
+            
+            <tr>
+              <th><h5>Find pages with...</h5></th><br>
+              <th style="color: gray; font-size: 15px;">To do this in the search box.</th>
+            </tr>
+        
+            <tr>
+            <td><form action="https://www.google.com/search">
+                <div class="divs-advanced">
+                <br><label><h6>all these words:</h6></label>
+                <input type="text" size="70" class="box" name="as_q"><br><br>
+            </div>
+            </td>
+
+            <td><h6>Type the important words: tri-colour rat terrier</h6></td>
+            </tr>
+            </form>
+
+            <tr>
+            <td><div class="divs-advanced">
             <label>this exact word or phrase:</label>
             <input type="text" size="70" class="box" name="as_epq"><br><br>
-        </div>
-        <div class="divs-advanced">
+            </div>
+            <td><h6>Put exact words in quotes: "rat terrier"</h6></td>
+            </tr>
+            </td>
+    
+            <tr>
+            <td>
+            <div class="divs-advanced">
             <label>any of these words:</label>
             <input type="text" size="70" class="box" name="as_oq"><br><br>
-        </div>
-        <div class="divs-advanced">
-            <label>none of these words:</label>
-            <input type="text" size="70" class="box" name="as_eq"><br><br>
-        </div>
-        <div class="divs-advanced">
-        <input type="submit" name="btnK" class="btn btn-primary btn-sm" value="Advanced Search">
-        </div>
-    </form>
+            </div>
+            <td><h6>Type OR between all the words you want: miniature OR standard</h6></td>
+            </tr>
+            </td>
 
+            <tr>
+            <td>
+            <div class="divs-advanced">
+                <label>none of these words:</label>
+                <input type="text" size="70" class="box" name="as_eq"><br><br>
+            </div>
+            <td><h6>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</h6></td>
+            </tr>
+            </td>
+
+            <tr>
+            <td>
+            <div class="divs-advanced">
+            <input type="submit" name="btnK" class="btn btn-primary btn-sm" value="Advanced Search">
+            </div>
+            </tr>
+            </td>
+
+        </table>
+      </form>
     </body>
 </html>
